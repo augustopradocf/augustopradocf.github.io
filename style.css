@@ -1,13 +1,13 @@
 :root {
-  --bg: #0c1320;
-  --bg-soft: #121c2d;
-  --panel: rgba(18, 27, 43, 0.94);
-  --panel-strong: rgba(20, 31, 50, 0.98);
-  --line: rgba(103, 126, 173, 0.24);
-  --text: #eef3ff;
-  --muted: #9ca9c2;
-  --label: #d5a93a;
-  --topic: #58b9ff;
+  --bg: #0a0a0a;
+  --bg-soft: #111111;
+  --panel: rgba(18, 18, 18, 0.96);
+  --panel-strong: rgba(0, 0, 0, 0.98);
+  --line: rgba(255, 199, 0, 0.20);
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.70);
+  --label: #ffd000;
+  --topic: #ffd000;
   --shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
   --radius-xl: 30px;
   --radius-lg: 24px;
@@ -27,9 +27,9 @@ body {
   color: var(--text);
   font-family: "Manrope", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(88, 185, 255, 0.12), transparent 22%),
-    radial-gradient(circle at 82% 18%, rgba(213, 169, 58, 0.10), transparent 20%),
-    linear-gradient(180deg, #0b121d 0%, var(--bg) 52%, var(--bg-soft) 100%);
+    radial-gradient(circle at top left, rgba(255, 208, 0, 0.10), transparent 22%),
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.05), transparent 20%),
+    linear-gradient(180deg, #000000 0%, var(--bg) 52%, var(--bg-soft) 100%);
   overflow-x: hidden;
 }
 
@@ -39,8 +39,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(103, 126, 173, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(103, 126, 173, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(255, 208, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 208, 0, 0.06) 1px, transparent 1px);
   background-size: 34px 34px;
   mask-image: radial-gradient(circle at center, black 42%, transparent 88%);
 }
@@ -58,13 +58,13 @@ body::before {
 .glow-a {
   top: -8rem;
   left: -8rem;
-  background: rgba(88, 185, 255, 0.20);
+  background: rgba(255, 208, 0, 0.18);
 }
 
 .glow-b {
   right: -8rem;
   bottom: 2rem;
-  background: rgba(213, 169, 58, 0.18);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .header,
@@ -210,15 +210,15 @@ body::before {
 .chips span {
   padding: 10px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(103, 126, 173, 0.24);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 208, 0, 0.22);
+  background: rgba(255, 255, 255, 0.02);
   color: var(--text);
   transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
 }
 
 .chips span:hover {
   transform: translateY(-2px);
-  border-color: rgba(88, 185, 255, 0.40);
+  border-color: rgba(255, 208, 0, 0.42);
 }
 
 .projects-grid,
