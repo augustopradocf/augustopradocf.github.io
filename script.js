@@ -1,17 +1,17 @@
-const revealedElements = document.querySelectorAll(".reveal");
+const revealItems = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver(
+const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+        entry.target.classList.add("show");
+        revealObserver.unobserve(entry.target);
       }
     });
   },
   {
-    threshold: 0.18,
+    threshold: 0.2
   }
 );
 
-revealedElements.forEach((element) => observer.observe(element));
+revealItems.forEach((item) => revealObserver.observe(item));
