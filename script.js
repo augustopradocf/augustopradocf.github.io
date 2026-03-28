@@ -5,9 +5,7 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, {
-  threshold: 0.18
-});
+}, { threshold: 0.16 });
 
 document.querySelectorAll('.reveal').forEach((element) => {
   observer.observe(element);
