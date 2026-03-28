@@ -1,3 +1,4 @@
+
 :root {
   --bg: #050505;
   --bg-soft: #111111;
@@ -9,7 +10,6 @@
   --label: #ffd000;
   --topic: #ffd000;
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
-  --radius-xl: 28px;
   --radius-lg: 22px;
 }
 
@@ -50,7 +50,7 @@ body::before {
   height: 22rem;
   border-radius: 999px;
   filter: blur(80px);
-  opacity: 0.22;
+  opacity: 0.18;
   pointer-events: none;
 }
 
@@ -63,7 +63,7 @@ body::before {
 .glow-b {
   right: -8rem;
   bottom: 1rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .header,
@@ -119,6 +119,14 @@ body::before {
   padding: 0 0 44px;
 }
 
+.section {
+  padding-top: 30px;
+}
+
+.section-head {
+  margin-bottom: 16px;
+}
+
 .summary-card,
 .project-card,
 .contact-card {
@@ -127,6 +135,9 @@ body::before {
   border: 1px solid var(--line);
   background: var(--panel);
   box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  padding: clamp(20px, 2.6vw, 24px);
+  transition: transform 280ms ease, border-color 280ms ease, background 280ms ease, box-shadow 280ms ease, opacity 650ms ease, filter 650ms ease;
 }
 
 .summary-card::before,
@@ -139,15 +150,12 @@ body::before {
   pointer-events: none;
 }
 
-.eyebrow,
-.section-label,
-.contact-card span {
+.summary-card p,
+.project-card li {
   position: relative;
   z-index: 1;
-  display: inline-flex;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.85;
 }
 
 .eyebrow,
@@ -157,34 +165,15 @@ body::before {
   color: var(--label);
 }
 
-.section-head h2 {
+.eyebrow,
+.section-label,
+.contact-card span {
   position: relative;
   z-index: 1;
-  margin: 14px 0 0;
-  line-height: 0.93;
-}
-
-.section {
-  padding-top: 30px;
-}
-
-.section-head {
-  margin-bottom: 16px;
-}
-
-.summary-card,
-.project-card,
-.contact-card {
-  border-radius: var(--radius-lg);
-  padding: clamp(20px, 2.6vw, 24px);
-}
-
-.summary-card p,
-.project-card li {
-  position: relative;
-  z-index: 1;
-  color: var(--muted);
-  line-height: 1.85;
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
 }
 
 .chips {
@@ -212,12 +201,6 @@ body::before {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-}
-
-.project-card,
-.contact-card {
-  min-width: 0;
-  transition: transform 280ms ease, border-color 280ms ease, background 280ms ease, box-shadow 280ms ease, opacity 650ms ease, filter 650ms ease;
 }
 
 .project-card:hover,
