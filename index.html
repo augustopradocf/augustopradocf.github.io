@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Augusto Prado</title>
-  <meta name="description" content="Augusto Prado portfolio with summary, skills, projects, and contact.">
+  <title>Augusto Prado | Portfolio</title>
+  <meta name="description" content="Portfolio de Augusto Prado com resumo profissional, habilidades técnicas, projetos e contato.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+
   <header class="header">
     <a href="#top" class="brand">Augusto Prado</a>
     <nav class="nav">
@@ -23,22 +26,28 @@
 
   <main id="top" class="page">
     <section class="hero reveal">
-      <p class="kicker">Junior Fullstack Developer • UX/UI Designer • Former Lawyer</p>
-      <h1>Building clean digital products with technical structure.</h1>
+      <span class="eyebrow">Junior Fullstack Developer • UX/UI Designer • Former Lawyer</span>
+      <h1>Backend. Frontend. API integrations. Problem-solving.</h1>
     </section>
 
-    <section id="summary" class="section reveal">
-      <span class="label">Professional Summary</span>
-      <p class="summary">
-        Professional with 7 years of legal experience transitioning into fullstack development.
-        Hands-on experience in backend and frontend development, API integrations, modular architecture,
-        Git workflows, and cloud deployment. Strong analytical thinking and problem-solving mindset.
-      </p>
+    <section id="summary" class="section">
+      <div class="section-head reveal">
+        <span class="section-label">Professional Summary</span>
+      </div>
+      <article class="summary-card reveal delay-1">
+        <p>
+          Professional with 7 years of legal experience transitioning into fullstack development.
+          Hands-on experience in backend and frontend development, API integrations, modular architecture,
+          Git workflows, and cloud deployment. Strong analytical thinking and problem-solving mindset.
+        </p>
+      </article>
     </section>
 
-    <section id="skills" class="section reveal">
-      <span class="label">Tech Skills</span>
-      <div class="tokens">
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <span class="section-label">Tech Skills</span>
+      </div>
+      <div class="chips reveal delay-1">
         <span>Python</span>
         <span>JavaScript</span>
         <span>Node.js</span>
@@ -51,40 +60,88 @@
       </div>
     </section>
 
-    <section id="projects" class="section reveal">
-      <span class="label">Technical Projects</span>
-      <div class="project-list">
-        <article class="project-item">
-          <strong>Healthcare Platform</strong>
-          <p>Fullstack collaboration, modular architecture, API integrations, Railway deployment.</p>
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <span class="section-label">Technical Projects</span>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <strong>Healthcare Platform (Private Repository)</strong>
+          <ul>
+            <li>Fullstack collaboration (frontend and backend).</li>
+            <li>Modular architecture (server, src, scripts, tests).</li>
+            <li>API integrations and environment configuration.</li>
+            <li>Deployment using Railway.</li>
+          </ul>
         </article>
-        <article class="project-item">
-          <strong>ADS Telegram Bot</strong>
-          <p>Node.js, JavaScript, Telegram Bot API, webhook authentication, cloud deployment.</p>
+
+        <article class="project-card reveal delay-1">
+          <strong>ADS Telegram Bot (Public Project)</strong>
+          <ul>
+            <li>Built with Node.js and JavaScript.</li>
+            <li>Telegram Bot API integration.</li>
+            <li>Webhook and token authentication.</li>
+            <li>Cloud deployment.</li>
+          </ul>
         </article>
-        <article class="project-item">
-          <strong>X-Mercado</strong>
-          <p>Shopping list, delivery, points system, HTML, CSS, JavaScript, service worker.</p>
+
+        <article class="project-card reveal delay-2">
+          <strong>X-Mercado (Public Project)</strong>
+          <ul>
+            <li>Shopping list, delivery, and points system in one platform.</li>
+            <li>Built with HTML, CSS, JavaScript, manifest, and service worker.</li>
+            <li>Focused on practical daily use and simple product experience.</li>
+          </ul>
         </article>
-        <article class="project-item">
-          <strong>Campus-Match-V2</strong>
-          <p>Social matching app, UNIT students, HTML, CSS, JavaScript, Firebase rules.</p>
+
+        <article class="project-card reveal delay-3">
+          <strong>Campus-Match-V2 (Public Project)</strong>
+          <ul>
+            <li>Social matching app designed for UNIT students.</li>
+            <li>Built with HTML, CSS, JavaScript, and Firebase rules.</li>
+            <li>Includes privacy and terms pages for real-world structure.</li>
+          </ul>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="section reveal">
-      <span class="label">Contact</span>
-      <div class="contact-list">
-        <a href="mailto:augustopradof@gmail.com">augustopradof@gmail.com</a>
-        <a href="tel:+5579999289818">79 99928-9818</a>
-        <span>Aracaju/SE</span>
-        <a href="https://github.com/augustopradocf" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/augustopradoc" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://www.behance.net/augustopradoc" target="_blank" rel="noreferrer">Behance</a>
+    <section id="contact" class="section">
+      <div class="section-head reveal">
+        <span class="section-label">Contact</span>
+      </div>
+      <div class="contact-grid">
+        <article class="contact-card reveal">
+          <span>Location</span>
+          <strong>Aracaju/SE</strong>
+        </article>
+        <article class="contact-card reveal delay-1">
+          <span>Phone</span>
+          <strong>79 99928-9818</strong>
+        </article>
+        <article class="contact-card reveal delay-2">
+          <span>Email</span>
+          <strong>augustopradof@gmail.com</strong>
+        </article>
+        <a class="contact-card reveal" href="https://github.com/augustopradocf" target="_blank" rel="noreferrer">
+          <span>GitHub</span>
+          <strong>github.com/augustopradocf</strong>
+        </a>
+        <a class="contact-card reveal delay-1" href="https://www.behance.net/augustopradoc" target="_blank" rel="noreferrer">
+          <span>Behance</span>
+          <strong>behance.net/augustopradoc</strong>
+        </a>
+        <a class="contact-card reveal delay-2" href="https://www.linkedin.com/in/augustopradoc" target="_blank" rel="noreferrer">
+          <span>LinkedIn</span>
+          <strong>linkedin.com/in/augustopradoc</strong>
+        </a>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <span>Augusto Prado</span>
+    <span>V5</span>
+  </footer>
 
   <script src="script.js"></script>
 </body>
