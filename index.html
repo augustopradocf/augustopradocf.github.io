@@ -4,127 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Augusto Prado | Portfolio</title>
-  <meta name="description" content="Portfolio minimalista de Augusto Prado com habilidades, projetos, links e contato.">
+  <meta name="description" content="Portfolio de Augusto Prado com resumo profissional, habilidades técnicas, projetos e contato.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
 
   <header class="header">
-    <a href="#top" class="brand">AUGUSTO PRADO</a>
+    <a href="#top" class="brand">Augusto Prado</a>
     <nav class="nav">
-      <a href="#habilidades">Habilidades</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#links">Links</a>
-      <a href="#contato">Contato</a>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="top" class="page">
     <section class="hero reveal">
-      <p class="eyebrow">Tecnologia • Frontend • Produto Digital</p>
-      <h1>Direção visual. Execução técnica. Presença digital.</h1>
-      <div class="hero-keywords">
-        <span>HTML</span>
-        <span>CSS</span>
+      <span class="eyebrow">Junior Fullstack Developer • UX/UI Designer • Former Lawyer</span>
+      <h1>Backend. Frontend. API integrations. Problem-solving.</h1>
+    </section>
+
+    <section id="summary" class="section">
+      <div class="section-head reveal">
+        <span class="section-label">Professional Summary</span>
+      </div>
+      <article class="summary-card reveal delay-1">
+        <p>
+          Professional with 7 years of legal experience transitioning into fullstack development.
+          Hands-on experience in backend and frontend development, API integrations, modular architecture,
+          Git workflows, and cloud deployment. Strong analytical thinking and problem-solving mindset.
+        </p>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <span class="section-label">Tech Skills</span>
+      </div>
+      <div class="chips reveal delay-1">
+        <span>Python</span>
         <span>JavaScript</span>
-        <span>UI</span>
-        <span>UX</span>
-        <span>Landing Pages</span>
-        <span>MVP</span>
-        <span>Responsivo</span>
+        <span>Node.js</span>
+        <span>HTML &amp; CSS</span>
+        <span>SQL</span>
+        <span>Git &amp; GitHub</span>
+        <span>Railway</span>
+        <span>Figma</span>
+        <span>Photoshop</span>
       </div>
     </section>
 
-    <section id="habilidades" class="section">
+    <section id="projects" class="section">
       <div class="section-head reveal">
-        <span class="section-label">Habilidades</span>
-        <h2>Palavras-chave do meu trabalho.</h2>
+        <span class="section-label">Technical Projects</span>
       </div>
-      <div class="grid skills-grid">
-        <article class="card reveal"><strong>Desenvolvimento Web</strong><span>Interfaces modernas</span></article>
-        <article class="card reveal delay-1"><strong>Frontend</strong><span>Estrutura visual limpa</span></article>
-        <article class="card reveal delay-2"><strong>UI / UX</strong><span>Leitura, hierarquia, clareza</span></article>
-        <article class="card reveal delay-3"><strong>Produto Digital</strong><span>MVP, fluxo, apresentação</span></article>
-        <article class="card reveal"><strong>Responsividade</strong><span>Desktop e mobile</span></article>
-        <article class="card reveal delay-1"><strong>Execução Visual</strong><span>Acabamento premium</span></article>
-      </div>
-    </section>
-
-    <section id="projetos" class="section">
-      <div class="section-head reveal">
-        <span class="section-label">Projetos</span>
-        <h2>Projetos feitos.</h2>
-      </div>
-      <div class="grid projects-grid">
+      <div class="projects-grid">
         <article class="project-card reveal">
-          <span class="project-tag">Plataforma</span>
-          <strong>CampusMatch</strong>
-          <p>Conceito de plataforma universitária com foco em interação e experiência digital.</p>
+          <strong>Healthcare Platform (Private Repository)</strong>
+          <ul>
+            <li>Fullstack collaboration (frontend and backend).</li>
+            <li>Modular architecture (server, src, scripts, tests).</li>
+            <li>API integrations and environment configuration.</li>
+            <li>Deployment using Railway.</li>
+          </ul>
         </article>
+
         <article class="project-card reveal delay-1">
-          <span class="project-tag">Comercial</span>
-          <strong>X-Mercado</strong>
-          <p>Estrutura digital com fluxo objetivo, interface clara e organização visual.</p>
+          <strong>ADS Telegram Bot (Public Project)</strong>
+          <ul>
+            <li>Built with Node.js and JavaScript.</li>
+            <li>Telegram Bot API integration.</li>
+            <li>Webhook and token authentication.</li>
+            <li>Cloud deployment.</li>
+          </ul>
         </article>
+
         <article class="project-card reveal delay-2">
-          <span class="project-tag">Apresentação</span>
-          <strong>Landing Pages</strong>
-          <p>Páginas para posicionamento profissional, produto e presença digital.</p>
+          <strong>X-Mercado (Public Project)</strong>
+          <ul>
+            <li>Shopping list, delivery, and points system in one platform.</li>
+            <li>Built with HTML, CSS, JavaScript, manifest, and service worker.</li>
+            <li>Focused on practical daily use and simple product experience.</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal delay-3">
+          <strong>Campus-Match-V2 (Public Project)</strong>
+          <ul>
+            <li>Social matching app designed for UNIT students.</li>
+            <li>Built with HTML, CSS, JavaScript, and Firebase rules.</li>
+            <li>Includes privacy and terms pages for real-world structure.</li>
+          </ul>
         </article>
       </div>
     </section>
 
-    <section id="links" class="section">
+    <section id="contact" class="section">
       <div class="section-head reveal">
-        <span class="section-label">Links</span>
-        <h2>Presença online.</h2>
+        <span class="section-label">Contact</span>
       </div>
-      <div class="grid links-grid">
-        <a class="link-card reveal" href="https://github.com/augustopradocf" target="_blank" rel="noreferrer">
+      <div class="contact-grid">
+        <article class="contact-card reveal">
+          <span>Location</span>
+          <strong>Aracaju/SE</strong>
+        </article>
+        <article class="contact-card reveal delay-1">
+          <span>Phone</span>
+          <strong>79 99928-9818</strong>
+        </article>
+        <article class="contact-card reveal delay-2">
+          <span>Email</span>
+          <strong>augustopradof@gmail.com</strong>
+        </article>
+        <a class="contact-card reveal" href="https://github.com/augustopradocf" target="_blank" rel="noreferrer">
           <span>GitHub</span>
           <strong>github.com/augustopradocf</strong>
         </a>
-        <a class="link-card reveal delay-1" href="https://www.linkedin.com/in/augustopradoc" target="_blank" rel="noreferrer">
-          <span>LinkedIn</span>
-          <strong>linkedin.com/in/augustopradoc</strong>
-        </a>
-        <a class="link-card reveal delay-2" href="https://www.behance.net/augustopradoc" target="_blank" rel="noreferrer">
+        <a class="contact-card reveal delay-1" href="https://www.behance.net/augustopradoc" target="_blank" rel="noreferrer">
           <span>Behance</span>
           <strong>behance.net/augustopradoc</strong>
         </a>
-      </div>
-    </section>
-
-    <section id="contato" class="section contact-section">
-      <div class="section-head reveal">
-        <span class="section-label">Contato</span>
-        <h2>Informações diretas.</h2>
-      </div>
-      <div class="grid contact-grid">
-        <article class="contact-card reveal">
-          <span>E-mail</span>
-          <strong>augustopradof@gmail.com</strong>
-        </article>
-        <article class="contact-card reveal delay-1">
-          <span>Telefone</span>
-          <strong>+55 79 99928-9818</strong>
-        </article>
-        <article class="contact-card reveal delay-2">
-          <span>Atuação</span>
-          <strong>Frontend • UI/UX • Produto Digital</strong>
-        </article>
+        <a class="contact-card reveal delay-2" href="https://www.linkedin.com/in/augustopradoc" target="_blank" rel="noreferrer">
+          <span>LinkedIn</span>
+          <strong>linkedin.com/in/augustopradoc</strong>
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <span>Augusto Prado</span>
-    <span>Portfolio V5</span>
+    <span>V5</span>
   </footer>
 
   <script src="script.js"></script>
