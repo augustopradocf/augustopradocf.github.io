@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="brand-mark.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +16,10 @@
   <div class="page-glow glow-right"></div>
 
   <header class="site-header">
-    <a href="#top" class="brand">Augusto Prado</a>
+    <a href="#top" class="brand">
+      <img src="brand-mark.svg" alt="Logomarca Augusto Prado">
+      <span>Augusto Prado</span>
+    </a>
     <nav class="site-nav">
       <a href="#sobre">Resumo</a>
       <a href="#habilidades">Habilidades</a>
@@ -25,13 +29,13 @@
   </header>
 
   <main id="top">
-    <section class="hero section reveal">
-      <div class="hero-copy">
+    <section class="hero section">
+      <div class="hero-copy reveal">
         <span class="eyebrow">Tecnologia da Informacao</span>
-        <h1>Visual moderno, execucao tecnica e projetos digitais com identidade.</h1>
+        <h1>Visual forte, execucao tecnica e identidade digital.</h1>
         <p>
           Sou Augusto Prado. Atuo com desenvolvimento web, UI/UX e construcao de experiencias digitais
-          pensadas para apresentar bem, funcionar bem e evoluir com clareza.
+          com presenca visual, estrutura clara e acabamento moderno.
         </p>
 
         <div class="hero-actions">
@@ -40,14 +44,27 @@
         </div>
       </div>
 
-      <aside class="hero-panel reveal delay-1">
-        <div class="panel-tag">Perfil</div>
-        <ul class="hero-points">
-          <li>Frontend e interfaces responsivas</li>
-          <li>Produto digital e estrutura de MVP</li>
-          <li>UI com foco em clareza visual</li>
-          <li>Execucao pronta para apresentacao</li>
-        </ul>
+      <aside class="hero-visual reveal delay-1">
+        <div class="portrait-card">
+          <img src="augusto-photo.jpg" alt="Foto de Augusto Prado" class="portrait-image">
+          <div class="portrait-overlay">
+            <img src="brand-mark.svg" alt="Marca AP" class="portrait-mark">
+            <div>
+              <strong>Augusto Prado</strong>
+              <span>Frontend, UI/UX e produto digital</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="panel-tag">Perfil</div>
+          <ul class="hero-points">
+            <li>Frontend e interfaces responsivas</li>
+            <li>Produto digital e estrutura de MVP</li>
+            <li>UI com foco em clareza visual</li>
+            <li>Execucao pronta para apresentacao</li>
+          </ul>
+        </div>
       </aside>
     </section>
 
@@ -107,7 +124,7 @@
         <article class="project-card reveal">
           <span class="project-type">Plataforma</span>
           <h3>CampusMatch</h3>
-          <p>Conceito de plataforma universitara com foco em experiencia digital e interacao.</p>
+          <p>Conceito de plataforma universitaria com foco em experiencia digital e interacao.</p>
         </article>
         <article class="project-card reveal delay-1">
           <span class="project-type">Produto</span>
@@ -154,7 +171,10 @@
   </main>
 
   <footer class="site-footer">
-    <span>Augusto Prado</span>
+    <div class="footer-brand">
+      <img src="brand-mark.svg" alt="Logomarca Augusto Prado">
+      <span>Augusto Prado</span>
+    </div>
     <span>Portfolio resumido em TI</span>
   </footer>
 
