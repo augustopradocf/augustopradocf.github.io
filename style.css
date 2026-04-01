@@ -102,8 +102,8 @@ body::before {
 }
 
 .brand-mark {
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid rgba(255, 208, 0, 0.24);
@@ -117,8 +117,8 @@ body::before {
 }
 
 .footer-mark {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid rgba(255, 208, 0, 0.24);
