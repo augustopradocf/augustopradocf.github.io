@@ -102,9 +102,13 @@ body::before {
 }
 
 .brand-mark {
-  width: 30px;
-  height: 30px;
-  flex: 0 0 30px;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px;
+  max-width: 28px;
+  min-height: 28px;
+  max-height: 28px;
+  flex: 0 0 28px;
   object-fit: cover;
   border-radius: 8px;
   display: block;
@@ -117,9 +121,13 @@ body::before {
 }
 
 .footer-mark {
-  width: 22px;
-  height: 22px;
-  flex: 0 0 22px;
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  flex: 0 0 20px;
   object-fit: cover;
   border-radius: 6px;
   display: block;
@@ -288,4 +296,12 @@ body::before {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.brand img,
+.footer-brand img {
+  width: inherit !important;
+  height: inherit !important;
+  max-width: inherit !important;
+  max-height: inherit !important;
 }
