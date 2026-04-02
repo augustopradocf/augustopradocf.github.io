@@ -101,6 +101,30 @@ body::before {
   gap: 12px;
 }
 
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-mark {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
 
 .nav {
   display: flex;
@@ -260,3 +284,8 @@ body::before {
 .delay-1 { transition-delay: 90ms; }
 .delay-2 { transition-delay: 180ms; }
 .delay-3 { transition-delay: 270ms; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
